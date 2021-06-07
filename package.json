@@ -15,7 +15,8 @@
     "dotenv": "^8.6.0",
     "meilisearch": "^0.18.2",
     "vue": "^2.6.11",
-    "vue-instantsearch": "^3.7.0"
+    "vue-instantsearch": "^3.7.0",
+    "vue-observe-visibility": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "~4.5.0",
