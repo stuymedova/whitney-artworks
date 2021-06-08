@@ -1,8 +1,16 @@
 <template>
   <ais-instant-search :search-client='searchClient' index-name='artworks'>
+    <ais-state-results>
+      <template slot-scope='{ query }'>
+        <ais-stats v-if='query.length > 0'>
+          <p slot-scope='{ nbHits }'>{{ formatNumber(nbHits) }} matches</p>
+        </ais-stats>
+        <div v-else></div>
+      </template>
+    </ais-state-results>
     <ais-search-box placeholder='Search' />
-    <ais-configure :hitsPerPage='100' />
 
+    <ais-configure :hitsPerPage='100' />
     <app-infinite-hits>
       <div slot='item' slot-scope='{ item }'>
         <p>{{ item.title }}</p>
@@ -15,6 +23,7 @@
 <script>
   import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
   import AppInfiniteHits from './components/InfiniteHits';
+  import { formatNumber } from './utils';
 
   export default {
     components: { AppInfiniteHits },
@@ -31,6 +40,9 @@
         show: true,
         isExpanded: true
       };
-    }
+    },
+    methods: {
+      formatNumber,
+    },
   };
 </script>

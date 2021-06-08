@@ -26,5 +26,6 @@
 <style scoped>
   .sentinel {
     list-style-type: none;
+    margin-top: -200px;
   }
 </style>
