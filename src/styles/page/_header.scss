@@ -1,0 +1,63 @@
+.header {
+  width: 100%;
+  height: auto;
+  background-color: $background-color;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__site-title {
+    margin: 1rem;
+    font-family: $title-font;
+    font-size: $title-font-size;
+  }
+
+  &__search-area {
+    display: flex;
+    align-items: center;
+
+    margin: 1rem;
+    color: $search-area-color;
+    font-size: $search-area-font-size;
+  }
+}
+
+// search area
+.ais-StateResults {
+  margin: 0 .5rem;
+}
+
+.ais-SearchBox {
+  &-submit, &-reset, &-loadingIndicator {
+    display: none;
+  }
+
+  &-form > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  
+    width: 180px;
+    height: 1.475rem;
+    padding: .125rem .25rem;
+  
+    border: 1px solid $color;
+    border-radius: .15rem;
+    
+    font-size: $base-font-size;
+
+    &::placeholder {
+      color: $search-area-color;
+      opacity: 1;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+}

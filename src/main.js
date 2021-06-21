@@ -3,6 +3,8 @@ import App from './App.vue';
 import InstantSearch from 'vue-instantsearch';
 import VueObserveVisibility from 'vue-observe-visibility';
 
+import './styles/main.scss';
+
 Vue.use(InstantSearch);
 Vue.use(VueObserveVisibility);
 Vue.config.productionTip = false;

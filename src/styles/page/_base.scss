@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow: auto;
+  background-color: $background-color;
+  color: $color;
+
+  font-family: $font;
+  font-size: $base-font-size;
+}
+
+main {
+  margin-top: 6.5rem;
+}

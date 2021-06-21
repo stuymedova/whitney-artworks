@@ -1,0 +1,72 @@
+table { 
+  border-collapse: collapse;
+  margin: 1rem;
+
+  tr:not(.ais-InfiniteHits-item__table-header):hover, 
+  tr:not(.ais-InfiniteHits-item__table-header):focus {
+    background-color: $highlight-color;
+    outline: none;
+  }
+
+  th {
+    font-family: $title-font;
+    border-top: 1px solid $table-border-color;
+  }
+
+  th, td { 
+    text-align: left;
+    padding: .3rem;
+    border-bottom: 1px solid $table-border-color;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  th:not(:last-child), td:not(:last-child) { 
+    border-right: 1px solid $table-border-color;
+  }
+}
+
+// search results (default & query)
+.ais-InfiniteHits {
+  display: inline-flex;
+  flex-direction: column;
+
+  &-item {
+    display: flex;
+  }
+
+  &-item__table-header {
+    position: sticky;
+    top: 4rem;
+    background: $background-color;
+  }
+}
+
+.item {
+  &__artist {
+    width: 10rem;
+  }
+  &__title {
+    width: 25rem;
+  }
+  &__date {
+    width: 10rem;
+  }
+  &__classification {
+    width: 10rem;
+  }
+  &__medium {
+    width: 20rem;
+  }
+  &__dimensions {
+    width: 40rem;
+  }
+  &__pub-info {
+    width: 35rem;
+  }
+  &__credit-line {
+    width: 45rem;
+  }
+}
