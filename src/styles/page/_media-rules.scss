@@ -1,0 +1,96 @@
+@media screen and (max-width: 995px) {
+  main {
+    margin-top: 8rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 6rem;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  main {
+    margin-top: 10rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 8rem;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  main {
+    margin-top: 7.75rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 8.75rem;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+
+    &__site-title {
+      margin: 1rem 1rem .5rem;
+    }
+    &__search-area {
+      margin: .5rem 1rem 1.25rem;
+    }
+
+    &__search-area--wrapper {
+      width: 100%;
+    }
+  }
+
+  .ais-StateResults {
+    margin: 0;
+    display: none;
+  }
+
+  .ais-SearchBox, .ais-SearchBox-form > input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  main {
+    margin-top: 9.75rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 10.75rem;
+  }
+}
+
+@media screen and (max-width: 273px) {
+  main {
+    margin-top: 11.75rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 12.75rem;
+  }
+}
+
+@media screen and (max-width: 215px) {
+  main {
+    margin-top: 13.75rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 14.75rem;
+  }
+}
+
+@media screen and (max-width: 186px) {
+  main {
+    margin-top: 15.75rem;
+  }
+
+  .ais-InfiniteHits-item__table-header {
+    top: 16.75rem;
+  }
+}

@@ -28,7 +28,6 @@ table {
   }
 }
 
-// search results (default & query)
 .ais-InfiniteHits {
   display: inline-flex;
   flex-direction: column;
@@ -49,7 +48,7 @@ table {
     width: 10rem;
   }
   &__title {
-    width: 25rem;
+    width: 30rem;
   }
   &__date {
     width: 10rem;
@@ -60,13 +59,22 @@ table {
   &__medium {
     width: 20rem;
   }
+  &__accession-number {
+    width: 10rem;
+  }
   &__dimensions {
     width: 40rem;
   }
   &__pub-info {
-    width: 35rem;
+    width: 40rem;
+  }
+  &__edition {
+    width: 10rem;
   }
   &__credit-line {
-    width: 45rem;
+    width: 40rem;
+  }
+  &__credit-line-repro {
+    width: 40em;
   }
 }
