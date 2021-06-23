@@ -41,7 +41,7 @@ Dataset was converted to JSON and further adapted. Changes:
 
 ## Search engine
 
-Used fast typo-tolerant (and open source) search engine [MeiliSearch](https://github.com/meilisearch/MeiliSearch) (and [Meilisearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI).
+Used fast typo-tolerant (and open source) search engine [MeiliSearch](https://www.meilisearch.com) (and [Meilisearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI).
 
 > Flow:  
 > 1. Launch Meilisearch
@@ -66,11 +66,30 @@ Searchable attributes, displayed attributes:
 'credit_line_repro',
 ```
 
+## Quick Setup
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
+- [MeiliSearch](https://www.meilisearch.com)
+
+### Setup
+
+Run in terminal:
+```shell
+npm install
+npm run serve # or npm run build
+```
+
 ## Result
 
-Navigation: …
+Navigation:  
 
-Search: …
+https://user-images.githubusercontent.com/53351370/123099619-07907a00-d43b-11eb-9069-ffc6c833c0a0.mov
+
+Search:  
+
+https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
 
 ## Todo
 
