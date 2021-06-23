@@ -1,6 +1,6 @@
 @media screen and (max-width: 995px) {
   main {
-    margin-top: 8rem;
+    margin-top: 7.75rem;
   }
 
   .ais-InfiniteHits-item__table-header {
@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 715px) {
   main {
-    margin-top: 10rem;
+    margin-top: 9.75rem;
   }
 
   .ais-InfiniteHits-item__table-header {
@@ -30,7 +30,7 @@
   .header {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: stretch;
 
     &__site-title {

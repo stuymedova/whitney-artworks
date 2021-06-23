@@ -1,3 +1,4 @@
+import 'intersection-observer/intersection-observer';
 import Vue from 'vue';
 import App from './App.vue';
 import InstantSearch from 'vue-instantsearch';
