@@ -4,9 +4,9 @@ Browse and search Whitney's collection of over 25,000 artworks.
 
 ## View online
 
-URL: …  
-Meilisearch hosted on an AWS EC2 instance  
-This app hosted on Netlify/Vercel  
+URL: https://whitney-artworks.vercel.app  
+MeiliSearch is hosted on an AWS EC2 instance  
+This app is hosted on Vercel  
 
 ## Dataset
 
@@ -18,7 +18,7 @@ The dataset was converted to JSON and further adapted. Changes:
 
 ## Search engine
 
-This app uses [MeiliSearch](https://www.meilisearch.com), a fast, typo-tolerant and open-source search engine. (And [Meilisearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
+This app uses [MeiliSearch](https://www.meilisearch.com), a fast, typo-tolerant and open-source search engine. (And [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
 
 **Search settings**  
 Searchable attributes, displayed attributes:
@@ -37,7 +37,7 @@ Searchable attributes, displayed attributes:
 ```
 Other settings were not customized.
 
-## Screen recordings
+## Screen recordings/Screenshots
 
 Navigation:  
 
@@ -47,11 +47,13 @@ Search:
 
 https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
 
-Note: some details have changed since the time these screen recording were made.
+Note: some details have changed since the time these recordings were made.
+
 
 ## Todo
 
 - Find a good way to show overflowed text
+- Optimize the initial loading UI. In addition to the title, also display a search bar and a table header while the data is loading
 
 ---
 
@@ -92,7 +94,7 @@ Note: some details have changed since the time these screen recording were made.
 
 ### Setup
 
-1. [Download and launch Meilisearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with v0.20
+1. [Download and launch MeiliSearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with MeiliSearch v0.20
 2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may not specify a [master key](https://docs.meilisearch.com/reference/features/configuration.html#options) (`VUE_APP_MEILISEARCH_API_KEY`)
 3. Run in terminal:
 ```shell
