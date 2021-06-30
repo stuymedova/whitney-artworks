@@ -28,6 +28,11 @@ table {
   }
 }
 
+.ais-InstantSearch {
+  overflow: auto;
+  height: 100vh;
+}
+
 .ais-InfiniteHits {
   display: inline-flex;
   flex-direction: column;

@@ -4,17 +4,13 @@
     <header>
       <div class='header'>
         <h1 class='header__site-title'>Whitney Museum of American Art — Artworks</h1>
-        <div class='header__search-area'>
-          <div class='header__search-area--wrapper'>
+        <div class='header__search-area--wrapper'>
+          <div class='header__search-area'>
             <ais-state-results>
               <template slot-scope='{ query, nbHits }'>
-                <ais-stats v-if='query.length > 0 && nbHits > 0'>
-                  <p>{{ formatNumber(nbHits) }}&nbsp;matches</p>
-                </ais-stats>
-                <div v-else-if='query.length > 0 && nbHits === 0'>
-                  <p>Not&nbsp;found</p>
-                </div>
-                <div v-else></div>
+                <p v-if='query.length > 0 && nbHits > 0'>{{ formatNumber(nbHits) }}&nbsp;matches</p>
+                <p v-else-if='query.length > 0 && nbHits === 0'>Not&nbsp;found</p>
+                <p v-else></p>
               </template>
             </ais-state-results>
             <ais-search-box placeholder='Search' autofocus />

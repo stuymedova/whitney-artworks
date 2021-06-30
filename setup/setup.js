@@ -11,10 +11,11 @@ dotenv.config();
   });
 
   // Create index if it doesn't already exist
+  console.log('[1/3] Creating an index...');
   const index = await client.getOrCreateIndex('artworks');
-  console.log('[1/3] Index created');
 
   // Add settings
+  console.log('[2/3] Adding settings...');
   const settings = {
     distinctAttribute: null,
     searchableAttributes: [
@@ -52,12 +53,13 @@ dotenv.config();
   await index.waitForPendingUpdate(settingsUpdate, {
     timeOutMs: 100000
   });
-  console.log('[2/3] Settings added');
 
   // Add documents
+  console.log('[3/3] Adding documents...');
   let { updateId } = await index.addDocuments(dataset);
   await index.waitForPendingUpdate(updateId, {
     timeOutMs: 100000
   });
-  console.log('[3/3] Documents added');
+
+  console.log('Indexing is completed');
 })();

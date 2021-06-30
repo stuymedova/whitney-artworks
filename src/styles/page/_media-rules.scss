@@ -36,11 +36,11 @@
     &__site-title {
       margin: 1rem 1rem .5rem;
     }
-    &__search-area {
-      margin: .5rem 1rem 1.25rem;
+    &__search-area--wrapper {
+      margin: .5rem 1rem 1.5rem;
     }
 
-    &__search-area--wrapper {
+    &__search-area {
       width: 100%;
     }
   }

@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node --experimental-json-modules setup/setup.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "node --experimental-json-modules setup/setup.js && vue-cli-service build"
   },
   "dependencies": {
     "@meilisearch/instant-meilisearch": "^0.5.0",

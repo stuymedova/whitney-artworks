@@ -1,8 +1,61 @@
-# Whitney Artworks
+# Whitney Museum of American Art — Artworks
 
 Browse and search Whitney's collection of over 25,000 artworks.
 
-## Overview
+## View online
+
+URL: …  
+Meilisearch hosted on an AWS EC2 instance  
+This app hosted on Netlify/Vercel  
+
+## Dataset
+
+This app is based on the dataset distributed by Whitney under the CC0 License. It can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
+
+The dataset was converted to JSON and further adapted. Changes:
+- All `<br>` tags have been removed
+- For element ID `61726`, title has been changed from `<span style=\"color:green;\">100's</span>` to `100's`
+
+## Search engine
+
+This app uses [MeiliSearch](https://www.meilisearch.com), a fast, typo-tolerant and open-source search engine. (And [Meilisearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
+
+**Search settings**  
+Searchable attributes, displayed attributes:
+```
+'artists',
+'title',
+'display_date',
+'classification',
+'medium',
+'accession_number',
+'dimensions',
+'publication_info',
+'edition',
+'creidt_line',
+'credit_line_repro',
+```
+Other settings were not customized.
+
+## Screen recordings
+
+Navigation:  
+
+https://user-images.githubusercontent.com/53351370/123099619-07907a00-d43b-11eb-9069-ffc6c833c0a0.mov
+
+Search:  
+
+https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
+
+Note: some details have changed since the time these screen recording were made.
+
+## Todo
+
+- Find a good way to show overflowed text
+
+---
+
+## More information: Overview
 
 ```
 .
@@ -31,66 +84,19 @@ Browse and search Whitney's collection of over 25,000 artworks.
     └── utils.js
 ```
 
-## Dataset
-
-This app is based on the dataset distributed by Whitney under the CC0 License. It can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
-
-Dataset was converted to JSON and further adapted. Changes:
-- All `<br>` tags removed
-- For element ID `61726`, title has been changed from `<span style=\"color:green;\">100's</span>` to `100's`
-
-## Search engine
-
-Used fast typo-tolerant (and open source) search engine [MeiliSearch](https://www.meilisearch.com) (and [Meilisearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI).
-
-> Flow:  
-> 1. Launch Meilisearch
-> 2. Add a dataset (formatted as JSON), wait for the indexing to complete
-> 3. Test by searching either through the MeiliSearch web interface or curl
-> 4. Set up the frontend
-
-### Settings:
-
-Searchable attributes, displayed attributes:
-```
-'artists',
-'title',
-'display_date',
-'classification',
-'medium',
-'accession_number',
-'dimensions',
-'publication_info',
-'edition',
-'creidt_line',
-'credit_line_repro',
-```
-
-## Quick Setup
+## Local setup
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
-- [MeiliSearch](https://www.meilisearch.com)
 
 ### Setup
 
-Run in terminal:
+1. [Download and launch Meilisearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with v0.20
+2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may not specify a [master key](https://docs.meilisearch.com/reference/features/configuration.html#options) (`VUE_APP_MEILISEARCH_API_KEY`)
+3. Run in terminal:
 ```shell
 npm install
-npm run serve # or npm run build
+npm run start # to index the dataset
+npm run serve # to launch an app
 ```
-
-## Result
-
-Navigation:  
-
-https://user-images.githubusercontent.com/53351370/123099619-07907a00-d43b-11eb-9069-ffc6c833c0a0.mov
-
-Search:  
-
-https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
-
-## Todo
-
-- Find a good way to show overflowed text

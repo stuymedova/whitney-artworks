@@ -18,7 +18,7 @@
     font-size: $title-font-size;
   }
 
-  &__search-area {
+  &__search-area--wrapper {
     min-width: 17.5rem;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
     font-size: $search-area-font-size;
   }
 
-  &__search-area--wrapper {
+  &__search-area {
     display: flex;
     margin-left: auto;
     align-items: center;
