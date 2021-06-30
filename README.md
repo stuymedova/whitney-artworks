@@ -6,11 +6,11 @@ Browse and search Whitney's collection of over 25,000 artworks.
 
 URL: https://whitney-artworks.vercel.app  
 MeiliSearch is hosted on an AWS EC2 instance  
-This app is hosted on Vercel  
+Frontend is hosted on Vercel  
 
 ## Dataset
 
-This app is based on the dataset distributed by Whitney under the CC0 License. It can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
+This app is based on a dataset distributed by Whitney under the CC0 License, it can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
 
 The dataset was converted to JSON and further adapted. Changes:
 - All `<br>` tags have been removed
@@ -47,7 +47,11 @@ Search:
 
 https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
 
-Note: some details have changed since the time these recordings were made.
+Accessibility test:
+
+<img width="1440" alt="whitney-artworks-accessibility" src="https://user-images.githubusercontent.com/53351370/124007030-a12fcc80-d9e3-11eb-94cb-58e04c075be8.png">
+
+Note: some details may have changed since the time these recordings/screenshots were made.
 
 
 ## Todo
@@ -95,7 +99,7 @@ Note: some details have changed since the time these recordings were made.
 ### Setup
 
 1. [Download and launch MeiliSearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with MeiliSearch v0.20
-2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may not specify a [master key](https://docs.meilisearch.com/reference/features/configuration.html#options) (`VUE_APP_MEILISEARCH_API_KEY`)
+2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may set `VUE_APP_MEILISEARCH_HOST` to `http://127.0.0.1:7700` and leave `VUE_APP_MEILISEARCH_API_KEY` empty
 3. Run in terminal:
 ```shell
 npm install
