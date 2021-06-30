@@ -8,6 +8,23 @@ URL: https://whitney-artworks.vercel.app
 MeiliSearch is hosted on an AWS EC2 instance  
 This app is hosted on Vercel  
 
+## Local setup
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
+
+### Setup
+
+1. [Download and launch MeiliSearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with MeiliSearch v0.20
+2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may not specify a [master key](https://docs.meilisearch.com/reference/features/configuration.html#options) (`VUE_APP_MEILISEARCH_API_KEY`)
+3. Run in terminal:
+```shell
+npm install
+npm run start # to index the dataset
+npm run serve # to launch an app
+```
+
 ## Dataset
 
 This app is based on the dataset distributed by Whitney under the CC0 License. It can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
@@ -35,7 +52,7 @@ Searchable attributes, displayed attributes:
 'creidt_line',
 'credit_line_repro',
 ```
-Other settings were not customized.
+Other settings haven't been customized.
 
 ## Screen recordings/Screenshots
 
@@ -57,7 +74,7 @@ Note: some details have changed since the time these recordings were made.
 
 ---
 
-## More information: Overview
+## Additional information: Overview
 
 ```
 .
@@ -84,21 +101,4 @@ Note: some details have changed since the time these recordings were made.
     ├── App.vue
     ├── main.js
     └── utils.js
-```
-
-## Local setup
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
-
-### Setup
-
-1. [Download and launch MeiliSearch](https://docs.meilisearch.com/learn/getting_started/installation.html). This app works with MeiliSearch v0.20
-2. Set credentials – duplicate `.env.example` as `.env` and adapt its values. As you run this locally, you may not specify a [master key](https://docs.meilisearch.com/reference/features/configuration.html#options) (`VUE_APP_MEILISEARCH_API_KEY`)
-3. Run in terminal:
-```shell
-npm install
-npm run start # to index the dataset
-npm run serve # to launch an app
 ```
