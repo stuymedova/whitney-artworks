@@ -35,7 +35,7 @@ The dataset was converted to JSON and further adapted. Changes:
 
 ## Search engine
 
-This app uses the [MeiliSearch](https://www.meilisearch.com) search engine for the search functionality. (And [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
+This app uses the [MeiliSearch](https://www.meilisearch.com) search engine (and [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI).
 
 **Search settings**  
 Searchable attributes, displayed attributes:
@@ -64,9 +64,11 @@ Search:
 
 https://user-images.githubusercontent.com/53351370/123099647-0eb78800-d43b-11eb-9155-013bc0925d35.mov
 
-Accessibility test:
+Accessibility test*:
 
 <img width="1440" alt="whitney-artworks-accessibility" src="https://user-images.githubusercontent.com/53351370/124007030-a12fcc80-d9e3-11eb-94cb-58e04c075be8.png">
+
+\*To further optimize for accessibility, remove autofocus from the search bar.
 
 Note: some details may have changed since the time these recordings/screenshots were made.
 
