@@ -35,7 +35,7 @@ The dataset was converted to JSON and further adapted. Changes:
 
 ## Search engine
 
-This app uses [MeiliSearch](https://www.meilisearch.com), a fast, typo-tolerant and open-source search engine. (And [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
+This app uses the [MeiliSearch](https://www.meilisearch.com) search engine for the search functionality. (And [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI)
 
 **Search settings**  
 Searchable attributes, displayed attributes:
@@ -75,34 +75,3 @@ Note: some details may have changed since the time these recordings/screenshots 
 
 - Find a good way to show overflowed text
 - Optimize the initial loading UI. In addition to the title, also display a search bar and a table header while the data is loading
-
----
-
-## Additional information: Overview
-
-```
-.
-├── setup
-│   ├── artworks.json
-│   └── setup.js
-└── src
-    ├── components
-    │   └── InfiniteHits.vue
-    ├── fonts
-    │   └── …
-    ├── styles
-    │   ├── page
-    │   │   ├── _base.scss
-    │   │   ├── _header.scss
-    │   │   ├── _media-rules.scss
-    │   │   └── _table.scss
-    │   ├── _instantsearch-reset.scss
-    │   ├── _page.scss
-    │   ├── _reset.scss
-    │   ├── _typefaces.scss
-    │   ├── _variables.scss
-    │   └── main.scss
-    ├── App.vue
-    ├── main.js
-    └── utils.js
-```
