@@ -4,7 +4,7 @@ Browse and search Whitney's collection of over 25,000 artworks.
 
 ## View online
 
-URL: https://whitney-artworks.vercel.app  
+URL: [removed]  
 MeiliSearch is hosted on an AWS EC2 instance  
 Frontend is hosted on Vercel  
 
