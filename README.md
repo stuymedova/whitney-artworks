@@ -21,7 +21,7 @@ Frontend is hosted on Vercel
 3. Run in terminal:
 ```shell
 npm install
-npm run start # to index the dataset
+npm run start # to index a dataset
 npm run serve # to launch an app
 ```
 
