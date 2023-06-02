@@ -29,13 +29,13 @@ npm run serve # to launch an app
 
 This app is based on a dataset distributed by Whitney under the CC0 License. It can be found in the museum's [Open Access repository](https://github.com/whitneymuseum/open-access/).
 
-The dataset has been converted to JSON and adapted. Changes:
+For use in this project the dataset has been converted to JSON and adapted. Changes:
 - All `<br>` tags have been removed
-- For element ID `61726`, title has been changed from `<span style=\"color:green;\">100's</span>` to `100's`
+- For element ID `61726`, the title has been changed from `<span style=\"color:green;\">100's</span>` to `100's`
 
 ## Search engine
 
-This app uses the [MeiliSearch](https://www.meilisearch.com) search engine (and [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) for the UI).
+This app uses the [MeiliSearch](https://www.meilisearch.com) search engine (and the [MeiliSearch Vue](https://github.com/meilisearch/meilisearch-vue) UI library).
 
 **Search settings**  
 Searchable attributes, displayed attributes:
@@ -75,5 +75,7 @@ Note: some details may have changed since the time these recordings/screenshots 
 
 ## Todo
 
-- Find a good way to show overflowed text
+- Add debounce to the input
+- Find a good way to show overflown text
 - Optimize the initial loading UI. In addition to the title, also display a search bar and a table header while the data is loading
+- Highlight pieces of text in the table that match the query
